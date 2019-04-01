@@ -230,7 +230,7 @@ export default {
     'awesome-inserted-slide': require('./AwesomeInsertedSlide').default,
     'figures-slide': require('./FiguresSlide').default,
     'end-credits': require('./components/EndCredits').default,
-    'themes-slideshow': require('../themes-slideshow/ThemesSlideshow').default
+    'themes-slideshow': require('../VersammlungSlideshow').default
   },
   data: function () {
     return {

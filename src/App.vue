@@ -1,27 +1,32 @@
-<template lang='pug'>
-#app
-  router-view
+<template>
+  <div id="app">
+    <versammlung-slideshow></versammlung-slideshow>
+  </div>
 </template>
 
 <script>
+import VersammlungSlideshow from './slideshows/VersammlungSlideshow.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    VersammlungSlideshow
+  }
 }
 </script>
 
-<style lang="scss">
-body {
-  width: 100%;
-  margin: 0 0;
-}
-html {
-  height: 0;
-}
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  width: 100%;
-}
+<style>
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 0px;
+  }
+  body {
+    display: block;
+    margin: 0px;
+  }
+
 </style>
