@@ -16,6 +16,19 @@
     slide.sieglinde_3(enter='fadeIn' leave='fadeOut')
         h2 20.04.2018 Sieglinde im Kübel
 
+    slide.alpinum(enter='fadeIn' leave='fadeOut')
+        h2 23.04.2018 Einweihung Alpinum
+
+    slide.fronleichnam(enter='fadeIn' leave='fadeOut')
+        h2 31.05.2018 Fronleichnam
+
+    slide.rosengarten(enter='fadeIn' leave='fadeOut')
+      eg-transition(enter='zoomIn')
+        h2 11.06.2018 Besichtigung Rosengarten
+
+    slide.wuerzburg(enter='fadeIn' leave='fadeOut')
+        h2 16.06.2018 Landesgartenschau Würzburg
+
     slide.gartentuer(enter='fadeIn' leave='fadeOut')
       eg-transition(enter='fadeInLeft')
         h2 24.06.2018 Tag der offenen Gartentür
@@ -23,6 +36,13 @@
     slide.nuertingen(enter='fadeIn' leave='fadeOut')
       eg-transition(enter='fadeInUp')
         h2 07.07.2018 Ausflug nach Hohenheim
+
+    slide.mosten1(enter='fadeIn' leave='fadeOut')
+      eg-transition(enter='fadeInUp')
+        h2 August/Oktober Mosten
+
+    slide.mosten2(enter='fadeIn' leave='fadeOut')
+        h2 August/Oktober Mosten
 
     slide.kartoffelfest1(enter='fadeIn' leave='fadeOut')
       eg-transition(enter='flipInX')
@@ -37,9 +57,38 @@
     slide.kartoffelfest4(enter='fadeIn' leave='fadeOut')
         h2 03.10.2018 Kartoffelfest
 
-    slide.local-eg-theme-space(enter='fadeIn'  leave='fadeOut')
+    slide.weihnachtsmarkt(enter='fadeIn'  leave='fadeOut')
       eg-transition(enter='zoomIn')
-        h3 Your bad taste is the limit
+        h2 01.12.2018 Weihnachtsmarkt
+
+    slide.baumschnitt01(enter='fadeIn'  leave='fadeOut')
+      eg-transition(enter='fadeInUp')
+        h2 26.01.2019 Baumschnittkurs Streuobstwiese
+
+    slide.baumschnitt03(enter='fadeIn'  leave='fadeOut')
+      eg-transition(enter='flipInX')
+        h2 09.03.2019 Baumschnittkurs
+
+    slide.gartenpfleger1(enter='fadeIn'  leave='fadeOut')
+      eg-transition(enter='flipInX')
+        h2 16.03.2019 Gartenpflegerkurs
+
+    slide.gartenpfleger2(enter='fadeIn'  leave='fadeOut')
+      eg-transition(enter='flipInX')
+        h2 16.03.2019 Gartenpflegerkurs
+
+    slide.streuobst1(enter='fadeIn'  leave='fadeOut')
+      eg-transition(enter='flipInX')
+        h2 23.03.2019 Streuobstwiese Baumpflege
+
+    slide.streuobst2(enter='fadeIn'  leave='fadeOut')
+      eg-transition(enter='flipInX')
+        h2 Baumpaten
+
+    slide.streuobst3(enter='fadeIn'  leave='fadeOut')
+      eg-transition(enter='flipInX')
+        h2 Baumpaten
+
 </template>
 <script>
 import eagle from 'eagle.js'
@@ -120,6 +169,30 @@ export default {
     background-image: url('/img/SiglindeImKuebel_03.JPG');
   }
 
+  .alpinum {
+
+    @extend .normal_slide;
+    /*background-image: url('/img/SiglindeImKuebel_03.JPG');*/
+  }
+
+  .fronleichnam {
+
+    @extend .normal_slide;
+    background-image: url('/img/fronleichnam.JPG');
+  }
+
+  .rosengarten {
+
+    @extend .normal_slide;
+    background-image: url('/img/rosengarten.jpg');
+  }
+
+  .wuerzburg {
+
+    @extend .normal_slide;
+    background-image: url('/img/Wuerzburg1.JPG');
+  }
+
   .gartentuer {
 
     @extend .normal_slide;
@@ -130,6 +203,18 @@ export default {
 
     @extend .normal_slide;
     background-image: url('/img/Nuertingen.JPG');
+  }
+
+  .mosten1 {
+
+    @extend .normal_slide;
+    background-image: url('/img/mosten1.jpg');
+  }
+
+  .mosten2 {
+
+    @extend .normal_slide;
+    background-image: url('/img/mosten2.jpeg');
   }
 
   .kartoffelfest1 {
@@ -156,116 +241,58 @@ export default {
     background-image: url('/img/Kartoffel4.JPG');
   }
 
-  .local-eg-theme-artic {
-    background-color: #11a9e2;
-    background-image: none;
-    color: #fff;
-    h1 {
-      font-weight: bold;
-      font-size: 3em;
-    }
-    h1, p {
-      font-family: "Comfortaa", Helvetica, Arial, sans-serif;
-      margin-top: 0;
-      position: absolute;
-      top:50%;
-      left:50%;
-      transform: translateX(-50%) translateY(-50%);
-      width: 80%;
+  .weihnachtsmarkt {
 
-      text-shadow: 0 0.01em 0 #ccc,
-                   0 0.02em 0 #c9c9c9,
-                   0 0.03em 0 #bbb,
-                   0 0.04em 0 #b9b9b9,
-                   0 0.05em 0 #aaa,
-                   0 0.06em 0.01em rgba(0,0,0,.1),
-                   0 0 0.05em rgba(0,0,0,.1),
-                   0 0.01em 0.03em rgba(0,0,0,.3),
-                   0 0.03em 0.05em rgba(0,0,0,.2),
-                   0 0.05em 0.1em rgba(0,0,0,.25),
-                   0 0.1em 0.1em rgba(0,0,0,.2),
-                   0 0.2em 0.2em rgba(0,0,0,.15);
-    }
-  }
-  .local-eg-theme-foreword {
-    @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
-    font-family: 'EB Garamond';
-    color: #ccc;
-    .eg-slide-content {
-      max-width: 90%;
-      width: 15em;
-    }
-    p {
-      margin-top: 30%;
-    }
+    @extend .normal_slide;
+    background-image: url('/img/weihnachtsmarkt.JPG');
   }
 
-  .local-eg-theme-bretagne {
-    @import url(https://fonts.googleapis.com/css?family=Pompiere);
-    h3 {
-      // letter-spacing: 1px;
-      font-family: 'Pompiere';
-      text-transform: none;
-      font-size: 3em;
-      color: rgba(255, 255, 255, .6);
-    }
-    background-image: url('/public/img/start.JPG');
-    background-position: center;
-    background-size: cover;
-  }
-  .local-eg-theme-forest-road {
-    @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
-    h3 {
-      font-family: 'Cabin Sketch';
-      margin-top: 50%;
-      text-align: left;
-      color: rgba(255, 255, 255, .9);
-    }
-    background-image: url(https://i.imgur.com/hxTMFZW.jpg);
-    background-position: center;
-    background-size: cover;
+  .baumschnitt01 {
 
+    @extend .normal_slide;
+    background-image: url('/img/baumschnitt01.JPG');
   }
 
-  .local-eg-theme-spark {
-    @import url(https://fonts.googleapis.com/css?family=Special+Elite);
-    h3 {
-      position: absolute;
-      font-family: 'Special Elite';
-      color: rgba(255, 255, 255, .8);
-      font-size: 1em;
-      bottom: 10%;
-      float: left;
-    }
-    background-image: url(https://i.imgur.com/FL9mwpd.jpg);
-    background-position: center;
-    background-size: cover;
+  .baumschnitt03 {
+
+    @extend .normal_slide;
+    background-image: url('/img/baumschnitt03.JPG');
   }
-  .local-eg-theme-city {
-    @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
-    @import 'assets/monokai';
-    .eg-code-block {
-      margin-top: 30%;
-    }
-    .code-box {
-      box-shadow: 0 0 0.25em 0.25em #ddd
-    }
-    background-image: url(https://i.imgur.com/kmmHith.jpg);
-    background-position: center;
-    background-size: cover;
+
+  .gartenpfleger1 {
+
+    @extend .normal_slide;
+    background-image: url('/img/Gartenpflegerkurs_03_16_01.JPG');
   }
-  .local-eg-theme-space {
-    @import url(https://fonts.googleapis.com/css?family=Forum);
-    h3 {
-      font-family: 'Forum';
-      font-size: 1.5em;
-      color: rgba(255, 255, 255, 0.75);
-      letter-spacing: 1.5px;
-      margin-top: 50%
-    }
-    background-image: url(https://i.imgur.com/yO2ivoD.jpg);
-    background-position: center;
-    background-size: cover;
+
+  .gartenpfleger2 {
+
+    @extend .normal_slide;
+    background-image: url('/img/Gartenpflegerkurs_03_16_02.JPG');
+  }
+
+  .streuobst1 {
+
+    @extend .normal_slide;
+    background-image: url('/img/baumpaten.jpg');
+  }
+
+  .streuobst2 {
+
+    @extend .normal_slide;
+    background-image: url('/img/TafelStreuobst.JPG');
+  }
+
+  .streuobst3 {
+
+    @extend .normal_slide;
+    background-image: url('/img/StreuobstIngstetten.JPG');
+  }
+
+  .dorf1 {
+
+    @extend .normal_slide;
+    background-image: url('/img/StreuobstIngstetten.JPG');
   }
 }
 
