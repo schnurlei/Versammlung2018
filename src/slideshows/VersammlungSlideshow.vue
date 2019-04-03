@@ -6,6 +6,17 @@
       h1 Mitglieder versammlung<br />2019
       img.imageScr1(src='/img/'+'logo_ogv_text2_2018_12.svg')
 
+    slide(enter='fadeIn' leave='fadeOut')
+        h2 Tagesordnung
+        p  1. Eröffnung und Begrüßung
+        p  2. Bericht des 1. Vorsitzenden
+        p  3. Bericht der Schriftführerin
+        p  4. Bericht der Kassiererin
+        p  5. Entlastung der Kassiererin und der Vorstandschaft
+        p  6. Grußworte der anwesenden Gäste
+        p  7. Ehrungen
+        p Blumenverlosung im Anschluss
+
     slide.sieglinde_1(enter='fadeIn' leave='fadeOut')
       eg-transition(enter='fadeInDown')
         h2 20.04.2018 Sieglinde im Kübel
@@ -78,7 +89,7 @@
         h2 16.03.2019 Gartenpflegerkurs
 
     slide.streuobst1(enter='fadeIn'  leave='fadeOut')
-      eg-transition(enter='flipInX')
+      eg-transition(enter='fadeInDown')
         h2 23.03.2019 Streuobstwiese Baumpflege
 
     slide.streuobst2(enter='fadeIn'  leave='fadeOut')
@@ -86,8 +97,16 @@
         h2 Baumpaten
 
     slide.streuobst3(enter='fadeIn'  leave='fadeOut')
-      eg-transition(enter='flipInX')
         h2 Baumpaten
+
+    slide.dorf1(enter='fadeIn'  leave='fadeOut')
+        h2 Dorfverschönerung
+
+    slide.dorf2(enter='fadeIn'  leave='fadeOut')
+        h2 Dorfverschönerung
+
+    slide.umwelt1(enter='fadeIn'  leave='fadeOut')
+        h2 Artenvielfalt
 
 </template>
 <script>
@@ -106,6 +125,10 @@ export default {
 <style lang='scss'>
 #ThemesSlideshow {
   // STYLES THAT ARE GLOBAL FOR THIS PARTICULAR SLIDESHOW
+  .eg-slideshow {
+    background-color: white;
+  }
+
   h3 {
     font-weight: normal;
     text-transform: uppercase;
@@ -292,8 +315,21 @@ export default {
   .dorf1 {
 
     @extend .normal_slide;
-    background-image: url('/img/StreuobstIngstetten.JPG');
+    background-image: url('/img/RabatteKirche.JPG');
   }
+
+  .dorf2 {
+
+    @extend .normal_slide;
+    background-image: url('/img/RabatteDorfkreuz.JPG');
+  }
+
+  .umwelt1 {
+
+    @extend .normal_slide;
+    background-image: url('/img/Josefskapelle.JPG');
+  }
+
 }
 
 </style>
