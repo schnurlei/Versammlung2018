@@ -27,8 +27,12 @@
     slide.sieglinde_3(enter='fadeIn' leave='fadeOut')
         h2 20.04.2018 Sieglinde im Kübel
 
-    slide.alpinum(enter='fadeIn' leave='fadeOut')
-        h2 23.04.2018 Einweihung Alpinum
+    slide(enter='fadeIn' leave='fadeOut')
+        h2 23.04.2018 Einweihung Alpinum Kreismustergarten
+
+    slide.kreismustergarten(enter='fadeIn' leave='fadeOut')
+      eg-transition(enter='fadeInLeft')
+        h2 26.05.2018 Aufsicht Kreismustergarten
 
     slide.fronleichnam(enter='fadeIn' leave='fadeOut')
         h2 31.05.2018 Fronleichnam
@@ -47,6 +51,10 @@
     slide.nuertingen(enter='fadeIn' leave='fadeOut')
       eg-transition(enter='fadeInUp')
         h2 07.07.2018 Ausflug nach Hohenheim
+
+    slide.leader(enter='fadeIn' leave='fadeOut')
+      eg-transition(enter='fadeInUp')
+        h2 20.9.18 Leader Streuobsterfassung
 
     slide.mosten1(enter='fadeIn' leave='fadeOut')
       eg-transition(enter='fadeInUp')
@@ -107,6 +115,18 @@
 
     slide.umwelt1(enter='fadeIn'  leave='fadeOut')
         h2 Artenvielfalt
+
+    slide.homepage(enter='fadeIn'  leave='fadeOut')
+        h2
+
+    slide.homepage(enter='fadeIn'  leave='fadeOut')
+        h2 Wettbewerb Gartenbauvereine
+        p Blumenschmuckwettbewerb
+        p Der naturgemäße Garten
+        p Mein Hausbaum
+
+    slide.kraeuter(enter='fadeIn'  leave='fadeOut')
+        h2
 
 </template>
 <script>
@@ -172,7 +192,8 @@ export default {
     }
     background-image: url('/img/SiglindeImKuebel_01.JPG');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .sieglinde_1 {
@@ -226,6 +247,18 @@ export default {
 
     @extend .normal_slide;
     background-image: url('/img/Nuertingen.JPG');
+  }
+
+  .kreismustergarten {
+
+    @extend .normal_slide;
+    background-image: url('/img/Kreismustergarten2.JPG');
+  }
+
+  .leader {
+
+    @extend .normal_slide;
+    background-image: url('/img/Sortenkartierung.jpg');
   }
 
   .mosten1 {
@@ -328,6 +361,18 @@ export default {
 
     @extend .normal_slide;
     background-image: url('/img/Josefskapelle.JPG');
+  }
+
+  .kraeuter {
+
+    @extend .normal_slide;
+    background-image: url('/img/kräuterspaziergang.svg');
+  }
+
+  .homepage {
+
+    @extend .normal_slide;
+    background-image: url('/img/homepage-ogv.jpg');
   }
 
 }
