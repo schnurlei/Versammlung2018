@@ -119,14 +119,78 @@
     slide.homepage(enter='fadeIn'  leave='fadeOut')
         h2
 
-    slide.homepage(enter='fadeIn'  leave='fadeOut')
+    slide(enter='fadeIn'  leave='fadeOut')
         h2 Wettbewerb Gartenbauvereine
         p Blumenschmuckwettbewerb
         p Der naturgemäße Garten
         p Mein Hausbaum
 
+    slide.baum
+
     slide.kraeuter(enter='fadeIn'  leave='fadeOut')
         h2
+
+    slide.villandry2
+
+    slide.villandry1
+
+    slide.villandry3
+
+    slide.frank
+
+    slide.beth3
+
+    slide.beth4
+
+    slide.beth5
+
+    slide.beth6
+
+    slide.beth7
+
+    slide.beth8
+
+    slide.sussex1
+
+    slide.sussex2
+
+    slide.wisley1
+
+    slide.wisley3
+
+    slide.wisley4
+
+    slide.wisley5
+
+    slide.wisley6
+
+    slide.hermann1
+
+    slide.hermann2
+
+    slide.hermann3
+
+    slide.hermann4
+
+    slide.hermann5
+
+    slide.weihen1
+
+    slide.weihen2
+
+    slide.hyde1
+
+    slide.hyde2
+
+    slide.hyde3
+
+    slide.hyde4
+
+    slide.hyde5
+
+    slide.dungeness
+
+    slide.schiessen
 
 </template>
 <script>
@@ -193,6 +257,21 @@ export default {
     background-image: url('/img/SiglindeImKuebel_01.JPG');
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .foto_slide {
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 3px #777;
+      color: black;
+      bottom:10%;
+      position: absolute;
+    }
+    background-image: url('/img/SiglindeImKuebel_01.JPG');
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 
@@ -373,6 +452,228 @@ export default {
 
     @extend .normal_slide;
     background-image: url('/img/homepage-ogv.jpg');
+  }
+
+  .villandry1 {
+
+    @extend .foto_slide;
+    background-image: url('/img/00_villandryDSC06642.jpg');
+  }
+
+  .villandry2 {
+
+    @extend .foto_slide;
+    background-image: url('/img/00_villandryDSC06908.jpg');
+  }
+
+  .villandry3 {
+
+    @extend .foto_slide;
+    background-image: url('/img/01_villandryDSC06727.jpg');
+  }
+
+  .beth1 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC08864.JPG');
+  }
+
+  .beth2 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC08883.JPG');
+  }
+
+  .beth3 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC09019.jpg');
+  }
+
+  .beth4 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC09032.jpg');
+  }
+
+  .beth5 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC09037.jpg');
+  }
+
+  .beth6 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC09047.jpg');
+  }
+
+  .beth7 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC09061.jpg');
+  }
+
+  .beth8 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1beth_chatto_DSC09069.jpg');
+  }
+
+  .dennmann {
+
+    @extend .foto_slide;
+    background-image: url('/img/1dennmann.JPG');
+  }
+
+  .sussex1 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1sussex_prairie_DSC08403.JPG');
+  }
+
+  .sussex2 {
+
+    @extend .foto_slide;
+    background-image: url('/img/1sussex_prairie_DSC08458.JPG');
+  }
+
+  .dungeness {
+
+    @extend .foto_slide;
+    background-image: url('/img/2dungeness.JPG');
+  }
+
+  .wisley1 {
+
+    @extend .foto_slide;
+    background-image: url('/img/30_wisley.jpg');
+  }
+
+  .wisley2 {
+
+    @extend .foto_slide;
+    background-image: url('/img/30_wisleyDSC02507.jpg');
+  }
+
+  .wisley3 {
+
+    @extend .foto_slide;
+    background-image: url('/img/30_wisley_2.jpg');
+  }
+
+  .wisley4 {
+
+    @extend .foto_slide;
+    background-image: url('/img/31_wisleyDSC02155.jpg');
+  }
+
+  .wisley5 {
+
+    @extend .foto_slide;
+    background-image: url('/img/31_wisleyDSC02423.jpg');
+  }
+
+  .wisley6 {
+
+    @extend .foto_slide;
+    background-image: url('/img/31_wisleyDSC02479.jpg');
+  }
+
+  .hermann1 {
+
+    @extend .foto_slide;
+    background-image: url('/img/40_DSC07519.jpg');
+  }
+
+  .hermann2 {
+
+    @extend .foto_slide;
+    background-image: url('/img/40_herrmannshofDSC07466.jpg');
+  }
+
+  .hermann3 {
+
+    @extend .foto_slide;
+    background-image: url('/img/41_DSC07501.jpg');
+  }
+
+  .hermann4 {
+
+    @extend .foto_slide;
+    background-image: url('/img/41_DSC07517.jpg');
+  }
+
+  .hermann5 {
+
+    @extend .foto_slide;
+    background-image: url('/img/41_DSC07575.jpg');
+  }
+
+  .weihen1 {
+
+    @extend .foto_slide;
+    background-image: url('/img/50_weihenstephanDSC00474.jpg');
+  }
+
+  .weihen2 {
+
+    @extend .foto_slide;
+    background-image: url('/img/50_weihenstephanDSC00493.jpg');
+  }
+
+  .frank {
+
+    @extend .foto_slide;
+    background-image: url('/img/53_frankreich.jpg');
+  }
+
+  .hyde1 {
+
+    @extend .foto_slide;
+    background-image: url('/img/60_hydeHallDSC08856.jpg');
+  }
+
+  .hyde2 {
+
+    @extend .foto_slide;
+    background-image: url('/img/60_hydeHallDSC08859.jpg');
+  }
+
+  .hyde3 {
+
+    @extend .foto_slide;
+    background-image: url('/img/60_hydeHallDSC08918.jpg');
+  }
+
+  .hyde4 {
+
+    @extend .foto_slide;
+    background-image: url('/img/60_hydeHallDSC08927.jpg');
+  }
+
+  .hyde5 {
+
+    @extend .foto_slide;
+    background-image: url('/img/60_hydeHallDSC08929.jpg');
+  }
+
+  .dungeness {
+
+    @extend .foto_slide;
+    background-image: url('/img/2dungeness.JPG');
+  }
+
+  .baum {
+
+    @extend .normal_slide;
+    background-image: url('/img/90_baum.jpg');
+  }
+
+  .schiessen {
+
+    @extend .foto_slide;
+    background-image: url('/img/90_schiessen.jpg');
   }
 
 }
